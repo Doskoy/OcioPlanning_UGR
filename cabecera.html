@@ -2,23 +2,27 @@
 <html>
 <head>
 <title>OcioPlanning_UGR</title>    
-    
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>   
 <body>
 <!--cabecera    -->
-    <div class="flex-container">
-        <div class="col-sm-2" id="logo">
-            <a href="index.html"><img src="/img/logo.jpg" class="img-rounded" alt="Logo" width="100" height="100"></a>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4" id="logo">
+            <a href="index.html"><img src="./img/logo.jpg" class="img-rounded" alt="Logo" width="100" height="100"></a>
         </div>
-        <div class="col-sm-2" id="imgCabecera">
-          <img src="/img/cabeceraImg.jpg" class="img-rounded" alt="Imagen alhambra" width="800" height="100">
+        <div class="col-sm-4" id="imgCabecera">
+          <img src="./img/cabeceraImg.jpg" class="img-rounded" alt="Imagen alhambra" width="600" height="100">
         </div>
 <!--
         <div class="col-sm-4" id="social">
           <img src="../img/socialNetworks.jpg" class="img-rounded" alt="Redes sociales">
         </div>
 -->
-      
+      </div>
     </div>
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
@@ -32,15 +36,15 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
-            <li><a href="agenda.html">Agenda</a></li>
+            <li class="active"><a href="agenda.html">Agenda</a></li>
             <li><a href="boletin.html">Boletin</a></li>
             <li><a href="eventos.html">Información</a></li>
             <li><a href="envioActividad.html">Enviar Actividad</a></li>
-            <li><a href="cancelarEvento.html">Cancelar evento</a></li>
+            <li><a href="comunicacion.html">Comunicación</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <form class="form-inline">
-                <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Buscar evento" aria-label="Buscar">
+                <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search" aria-label="Buscar">
                 <a href="#" class="btn btn-default btn-lg">
                     <span class="glyphicon glyphicon-search"></span>
                 </a>
@@ -52,20 +56,7 @@
             
 </body>
     
-<style>
-    .flex-container {
-  display: flex;
-  flex-wrap: nowrap;
-  background-color: #dacce6;
-}
-    
-    .flex-container > div {
-  width: 100px;
-  margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
-}
+<style>    
 </style>
     
 </html>
