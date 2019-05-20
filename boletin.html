@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>OcioPlanning_UGR</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+    
+<body>
+    <!--cabecera    -->
+    <div id="cabecera"></div>
+    <!--cabecera    -->
+    
+    <!--resto    -->
+
+    <h2>Darse de Alta</h2>
+    <h3 style="color: brown">Para estar enterado de todas las novedades a tu alrededor, mandenos su email!</h3>
+    <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+        Nombre:<br>
+        <input type="text" name="name"><br>
+        E-mail:<br>
+        <input type="text" name="mail"><br>
+        <input type="submit" value="Enviar">        
+    </form>
+    
+    <br><br>
+    <small id="emailHelp" class="form-text text-muted"><strong>Para darse de baja de nuestras novedades, envie un correo a <a href="mailto:ocioPlaning@ugr.es">ocioPlaning@ugr.es</a></strong></small>
+
+    <!--resto    -->
+   
+    <!--footer    -->
+    <div id="footer"></div>
+    <!--footer    -->
+</body>
+    
+<script>
+    jQuery(function(){
+      $("#cabecera").load("./include/cabecera.html"); 
+      $("#footer").load("./include/footer.html"); 
+    });
+</script>
+    
+</html>

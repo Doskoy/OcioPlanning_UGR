@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>OcioPlanning_UGR</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+    
+<body>
+    <!--cabecera    -->
+    <div id="cabecera"></div>
+    <!--cabecera    -->
+    
+    <!--resto    -->
+
+    <p>ENVIO ACTIVIDAD COMPLETAR</p>
+    <div class="container-fluid">
+        <div class="col-sm-4">
+            <form>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Nombre</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Perico">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput2">Apellido</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Garcia Vaquero">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput3">TLF contacto</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ej.999888555">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput4">Fecha</label>
+                <input size="16" type="date" value="2012-06-15 14:45"  class="form_datetime">      </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput3">Direccion Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="pericoEjemplo@example.com">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlSelect4">Tipo Evento</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Cultural</option>
+                  <option>Ocio</option>
+                  <option>Cientifico</option>
+                  <option>Aire libre</option>
+                  <option>Otro</option>
+                </select>
+              </div>      
+              <div class="form-group">
+                <label for="exampleFormControlInput5">Palabra clave</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Comida">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput6">Otra palabra clave</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Teatro">
+              </div>  
+
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Descripcion Evento</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlFile1">Subir foto</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+              </div>
+
+              <button type="submit" class="btn btn-primary col-md-3" id="enviarForm">Enviar</button>
+
+            </form>
+        </div>    
+    </div>    
+    <!--resto    -->
+   
+    <!--footer    -->
+    <div id="footer"></div>
+    <!--footer    -->
+</body>
+    
+<script>
+    jQuery(function(){
+      $("#cabecera").load("./include/cabecera.html"); 
+      $("#footer").load("./include/footer.html"); 
+    });
+</script>
+
+<script type="text/javascript">
+//    $(".form_datetime").datetimepicker({format: 'yyyy-mm-dd hh:ii'});
+    
+    jQuery("#enviarForm").on("click", function(e){
+     e.preventDefault();
+        alert("Datos enviados, en brebe le atenderan para confirmar sus datos, no se olvide de si desea cancelar el evento lo haga atraves del email cancelaTuEvento@ugr.es o accediendo a la cancelar Actividad. Gracias");
+    
+    });
+</script>   
+    
+</html>
